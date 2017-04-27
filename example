@@ -35,16 +35,14 @@ VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/piix3ide/0/Config/Pr
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/piix3ide/0/Config/PrimaryMaster/SerialNumber	'379E6F6659874FC2B0AE'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/piix3ide/0/Config/PrimaryMaster/FirmwareRevision	'FC2ZF50B'
 else
-VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/ahci/0/Config/Port0/ModelNumber	'SG_IO: bad/missing sense data, sb[]:  70 00 05 00 00 00 00 0a 00 00 00 00 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
- HDIO_GET_IDENTITY failed: Invalid argument'
+VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/ahci/0/Config/Port0/ModelNumber	'HITACHI HTD723216L9SA60'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/ahci/0/Config/Port0/SerialNumber	'379E6F6659874FC2B0AE'
-VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/ahci/0/Config/Port0/FirmwareRevision	'SG_IO: bad/missing sense data, sb[]:  70 00 05 00 00 00 00 0a 00 00 00 00 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
- HDIO_GET_IDENTITY failed: Invalid argument'
+VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/ahci/0/Config/Port0/FirmwareRevision	'FC2ZF50B'
 fi
 if [[ -z "$controller" ]]; then
-VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/piix3ide/0/Config/PrimarySlave/ATAPIVendorId	'sh: 1: cd-drive: Permission denied'
-VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/piix3ide/0/Config/PrimarySlave/ATAPIRevision	'sh:1:cd-drive:Permissiondenied'
-VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/piix3ide/0/Config/PrimarySlave/ATAPIProductId	'sh: 1: cd-drive: Permission denied'
+VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/piix3ide/0/Config/PrimarySlave/ATAPIVendorId	'0x1283'
+VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/piix3ide/0/Config/PrimarySlave/ATAPIRevision	'1'
+VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/piix3ide/0/Config/PrimarySlave/ATAPIProductId	'M2764AFI'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/piix3ide/0/Config/PrimarySlave/ATAPISerialNumber	'2727F3EA983D458AAB19'
 else
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/ahci/0/Config/Port1/ATAPIVendorId	'sh: 1: cd-drive: Permission denied'

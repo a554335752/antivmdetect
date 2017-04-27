@@ -90,18 +90,18 @@ print_status "${YELLOW}Installing antivmdetect and tools${NC}"
 cd /home/$name/tools
 git clone https://github.com/nsmfoo/antivmdetection.git
 mv antivmdetection antivmdetection_32-bit
-cp antivmdetection_32-bit antivmdetection_64-bit
+cp antivmdetection_32-bit /home/$name/tools/antivmdetection_64-bit
 wget https://download.sysinternals.com/files/VolumeId.zip
+wget http://www.afterdawn.com/software/general/download.cfm/devmanview_32-bit?mirror_id=0&version_id=88412&software_id=4019
+wget http://www.afterdawn.com/software/general/download.cfm/devmanview_64-bit?mirror_id=0&version_id=88411&software_id=4018
 unzip VolumeId
 #32-bit
 cd /home/$name/tools/antivmdetection_32-bit
-wget http://www.afterdawn.com/software/general/download.cfm/devmanview_32-bit?mirror_id=0&version_id=88412&software_id=4019
 cp /home/$name/tools/VolumeId/Volumeid $PWD
 touch computer.lst
 touch user.lst
 #64-bit
 cd /home/$name/tools/antivmdetection_64-bit
-http://www.afterdawn.com/software/general/download.cfm/devmanview_64-bit?mirror_id=0&version_id=88411&software_id=4018
 cp /home/$name/tools/VolumeId/Volumeid64 $PWD
 touch computer.lst
 touch user.lst

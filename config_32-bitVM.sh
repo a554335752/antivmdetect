@@ -11,5 +11,5 @@ cp DSDT-Intel* $name/DSDT_VMwareVirtualPlatform.bin
 mv VMwareVirtualPlatform.sh $name/
 mv VMwareVirtualPlatform.ps1 $name/
 cd $name/
-sed -i 's/"$1"/"$name/g' VMwareVirtualPlatform.sh
+sed -i 's/"$1"/'"$name"'/g' VMwareVirtualPlatform.sh
 

@@ -72,6 +72,7 @@ fi
 ########################################
 ##BEGIN MAIN SCRIPT##
 #Pre checks: These are a couple of basic sanity checks the script does before proceeding.
+export DEBIAN_FRONTEND=noninteractive
 
 echo -e "${YELLOW}What is the name of your cuckoo user?${NC}"
 read name

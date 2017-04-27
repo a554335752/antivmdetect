@@ -84,7 +84,7 @@ print_status "${YELLOW}If this takes too long try running ${RED}sudo rm -f /var/
 while fuser /var/lib/dpkg/lock >/dev/null 2>&1; do
    sleep 1
 done
-install_packages python_dmidecode re acpidump unzip mesa-utils
+install_packages python-dmidecode re acpidump unzip mesa-utils
 ##Antivm install
 print_status "${YELLOW}Installing antivmdetect and tools${NC}"
 cd /home/$name/tools

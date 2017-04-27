@@ -88,21 +88,23 @@ install_packages python-dmidecode re acpidump unzip mesa-utils
 ##Antivm install
 print_status "${YELLOW}Installing antivmdetect and tools${NC}"
 cd /home/$name/tools
-git clone https://github.com/nsmfoo/antivmdetection.git
+git clone https://github.com/nsmfoo/antivmdetection.git  &>> $logfile
 mv antivmdetection antivmdetection_32-bit
 cp antivmdetection_32-bit /home/$name/tools/antivmdetection_64-bit
-wget https://download.sysinternals.com/files/VolumeId.zip
-wget http://www.afterdawn.com/software/general/download.cfm/devmanview_32-bit?mirror_id=0&version_id=88412&software_id=4019
-wget http://www.afterdawn.com/software/general/download.cfm/devmanview_64-bit?mirror_id=0&version_id=88411&software_id=4018
-unzip VolumeId
+wget https://download.sysinternals.com/files/VolumeId.zip  &>> $logfile
+wget http://www.afterdawn.com/software/general/download.cfm/devmanview_32-bit?mirror_id=0&version_id=88412&software_id=4019  &>> $logfile
+wget http://www.afterdawn.com/software/general/download.cfm/devmanview_64-bit?mirror_id=0&version_id=88411&software_id=4018  &>> $logfile
+unzip VolumeId  &>> $logfile
 #32-bit
 cd /home/$name/tools/antivmdetection_32-bit
 cp /home/$name/tools/VolumeId/Volumeid $PWD
+cp /home/$name/tools/devmanview_32-bit* /home/$name/tools/antivmdetection_32-bit/DevManView.exe
 touch computer.lst
 touch user.lst
 #64-bit
 cd /home/$name/tools/antivmdetection_64-bit
 cp /home/$name/tools/VolumeId/Volumeid64 $PWD
+cp /home/$name/tools/devmanview_64-bit* /home/$name/tools/antivmdetection_64-bit/DevManView.exe
 touch computer.lst
 touch user.lst
 ##File permissions

@@ -21,7 +21,7 @@ VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiC
 # VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiOEMVBoxRev	** No value to retrieve **
 # VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiOEMVBoxVer	** No value to retrieve **
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiProcManufacturer	'GenuineIntel'
-VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiProcVersion	'       Intel(R) Core(TM) i7-3667U CPU @ 2.00GHz'
+VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiProcVersion	'Intel(R) Core(TM) i7-3667U CPU @ 2.00GHz'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiSystemFamily	'103C_5336AN'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiSystemProduct	'HP EliteBook Folio'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiSystemSKU	'E0E67UP#ABA'

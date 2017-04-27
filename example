@@ -46,7 +46,7 @@ VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/piix3ide/0/Config/Pr
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/piix3ide/0/Config/PrimarySlave/ATAPISerialNumber	'2727F3EA983D458AAB19'
 else
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/ahci/0/Config/Port1/ATAPIVendorId	'0x1283'
-VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/ahci/0/Config/Port1/ATAPIRevision	'1'
+VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/ahci/0/Config/Port1/ATAPIRevision	'B504'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/ahci/0/Config/Port1/ATAPIProductId	'M2764AFI'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/ahci/0/Config/Port1/ATAPISerialNumber	'2727F3EA983D458AAB19'
 fi

@@ -4,7 +4,8 @@ read name
 mkdir $name/
 cp DevManView.exe $name/
 cp Volumeid.exe $name/
-cp DSDT-Intel* $name/guestsetup.ps1
+cp DSDT* $/name
+cp guestsetup.ps1 $name/
 cp example.sh $name/virtualboxsetup.sh
 touch $name/computer.lst
 touch $name/user.lst

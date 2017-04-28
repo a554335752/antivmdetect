@@ -79,6 +79,7 @@ read name
 ##Folder setup
 dir_check /usr/bin/cd-drive
 dir_check /home/$name/tools
+
 ##Dep install
 print_status "${YELLOW}Waiting for dpkg process to free up...${NC}"
 print_status "${YELLOW}If this takes too long try running ${RED}sudo rm -f /var/lib/dpkg/lock${YELLOW} in another terminal window.${NC}"
@@ -89,7 +90,6 @@ install_packages python-dmidecode re acpidump unzip mesa-utils
 ##Antivm install
 print_status "${YELLOW}Installing antivmdetect and tools${NC}"
 cp DSDT* /home/$name/tools/DSDT-Intel-BOXDP55KG.bin
-cp config_example.sh  /home/$name/tools/
 cd /home/$name/tools
 git clone https://github.com/nsmfoo/antivmdetection.git  &>> $logfile
 mv antivmdetection antivmdetection_32-bit
@@ -103,6 +103,8 @@ unzip VolumeId  &>> $logfile
 cd /home/$name/tools/antivmdetection_32-bit
 mv $gitdir/config_32-bitVM.sh $PWD
 cp $gitdir/example.sh /home/$name/tools/antivmdetection_32-bit/
+cp $gitdir/example.ps1 /home/$name/tools/antivmdetection_32-bit/
+cp $gitdir/config_example.sh  /home/$name/tools/antivmdetection_32-bit/
 cp /home/$name/tools/DSDT-Intel-BOXDP55KG.bin $PWD
 mv /home/$name/tools/Volumeid.exe /home/$name/tools/antivmdetection_32-bit/
 cp /home/$name/tools/devmanview.zip $PWD
@@ -113,6 +115,8 @@ touch user.lst
 #64-bit
 cd /home/$name/tools/antivmdetection_64-bit
 mv $gitdir/config_64-bitVM.sh $PWD
+cp $gitdir/config_example.sh  /home/$name/tools/antivmdetection_64-bit/
+cp $gitdir/example.ps1 /home/$name/tools/antivmdetection_64-bit/
 cp $gitdir/example.sh /home/$name/tools/antivmdetection_64-bit/
 cp/home/$name/tools/DSDT-Intel-BOXDP55KG.bin $PWD
 mv /home/$name/tools/Volumeid64.exe /home/$name/tools/antivmdetection_64-bit/Volumeid.exe

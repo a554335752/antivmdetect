@@ -108,7 +108,7 @@ cp $gitdir/config_example.sh  /home/$name/tools/antivmdetection_32-bit/
 cp /home/$name/tools/DSDT-Intel-BOXDP55KG.bin $PWD
 mv /home/$name/tools/Volumeid.exe /home/$name/tools/antivmdetection_32-bit/
 cp /home/$name/tools/devmanview.zip $PWD
-unzip *.zip
+unzip *.zip &>> $logfile
 rm *.zip
 touch computer.lst
 touch user.lst
@@ -121,7 +121,7 @@ cp $gitdir/example.sh /home/$name/tools/antivmdetection_64-bit/
 cp/home/$name/tools/DSDT-Intel-BOXDP55KG.bin $PWD
 mv /home/$name/tools/Volumeid64.exe /home/$name/tools/antivmdetection_64-bit/Volumeid.exe
 cp /home/$name/tools/devmanview-x64.zip $PWD
-unzip *.zip
+unzip *.zip &>> $logfile
 rm *.zip
 touch computer.lst
 touch user.lst

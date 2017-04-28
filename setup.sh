@@ -74,7 +74,7 @@ fi
 #Pre checks: These are a couple of basic sanity checks the script does before proceeding.
 export DEBIAN_FRONTEND=noninteractive
 
-echo -e "${YELLOW}What is the name of your cuckoo user?${NC}"
+echo -e "${YELLOW}What is the name of your cuckoo user or non-root user that owns the VMs?${NC}"
 read name
 ##Folder setup
 dir_check /usr/bin/cd-drive

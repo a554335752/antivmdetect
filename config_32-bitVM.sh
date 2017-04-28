@@ -26,5 +26,5 @@ macadd="${octets}-${octeta}-${octetb}-${octetc}"
 
 cd $name/
 sed -i 's/"$1"/'"$name"'/g' virtualboxsetup.sh
-sed -i 's/"$1"/'"$name"'/g' virtualboxsetup.sh
+sed -i 's/0015C5000001/'"$macadd"'/g' virtualboxsetup.sh
 

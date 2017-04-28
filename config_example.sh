@@ -18,11 +18,11 @@ numberb=$RANDOM
 let "number %= $RANGE"
 let "numbera %= $RANGE"
 let "numberb %= $RANGE"
-octets='00-19-eC'
+octets='0019eC'
 octeta=`echo "obase=16;$number" | bc`
 octetb=`echo "obase=16;$numbera" | bc`
 octetc=`echo "obase=16;$numberb" | bc`
-macadd="${octets}-${octeta}-${octetb}-${octetc}"
+macadd="${octets}${octeta}${octetb}${octetc}"
 
 cd $name/
 sed -i 's/win7sp1_64-bit/'"$name"'/g' virtualboxsetup.sh

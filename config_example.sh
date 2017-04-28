@@ -6,9 +6,9 @@ cp DevManView.exe $name/
 cp Volumeid.exe $name/
 cp DSDT-Intel* $name/guestsetup.ps1
 cp example.sh $name/virtualboxsetup.sh
-touch computer.lst
-touch user.lst
-chmod +x virtualboxsetup.sh
+touch $name/computer.lst
+touch $name/user.lst
+chmod +x $name/virtualboxsetup.sh
 #!/bin/bash
 
 RANGE=255

@@ -2,8 +2,12 @@
 echo -e "${YELLOW}What VM would you like to create antivm scripts for?${NC}"
 read name
 mkdir $name/
+cp DevManView.exe $name/
+cp Volumeid.exe $name/
 cp DSDT-Intel* $name/guestsetup.ps1
-cp example.sh $name/virtualboxsetup.sh
+cp example.sh $name/virtualboxsetup.
+touch computer.lst
+touch user.lst
 chmod +x virtualboxsetup.sh
 #!/bin/bash
 

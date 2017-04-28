@@ -1,7 +1,9 @@
 # antivmdetect
-helps grab things needed for antivmdetect
+Helps grab things needed for antivmdetect
 
-Under home/tools/ you can run the 32 or 64-bit setup script to pull the information off your host machine to use as a template
+Run setup.sh as root
+
+Under home/$cuckoouser/tools/ you can run the 32 or 64-bit setup script to pull the information off your host machine to use as a template
 
 Or you can use the config_example.sh to use a premade template
 

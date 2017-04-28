@@ -105,6 +105,7 @@ mv $gitdir/config_32-bitVM.sh $PWD
 cp $gitdir/example.sh /home/$name/tools/antivmdetection_32-bit/
 cp /home/$name/tools/DSDT-Intel-BOXDP55KG.bin $PWD
 mv /home/$name/tools/Volumeid.exe /home/$name/tools/antivmdetection_32-bit/
+cp /home/$name/tools/devmanview.zip $PWD
 
 touch computer.lst
 touch user.lst
@@ -114,9 +115,10 @@ mv $gitdir/config_64-bitVM.sh $PWD
 cp $gitdir/example.sh /home/$name/tools/antivmdetection_64-bit/
 cp/home/$name/tools/DSDT-Intel-BOXDP55KG.bin $PWD
 mv /home/$name/tools/Volumeid64.exe /home/$name/tools/antivmdetection_64-bit/Volumeid.exe
-
+cp /home/$name/tools/devmanview-x64.zip $PWD
 touch computer.lst
 touch user.lst
+
 ##File permissions
 chown $name:$name -R /home/$name/tools/
 error_check 'Antivm tools installed'

@@ -13,7 +13,7 @@ VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiB
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiBoardProduct	'string:30FB'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiBoardSerial	'1CADF91932'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiBoardVendor	'Compal'
-VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiBoardVersion	'01.9A''
+VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiBoardVersion	'01.9A'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiChassisAssetTag	'ems013463'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiChassisSerial	'string:A74E'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiChassisType	'10'

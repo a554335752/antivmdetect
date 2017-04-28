@@ -3,7 +3,7 @@ echo -e "${YELLOW}What VM would you like to create antivm scripts for?${NC}"
 read name
 mkdir $name/
 cp DSDT-Intel* $name/DSDT-Intel*
-mv eample $name/virtualboxsetup.sh
+cp example $name/virtualboxsetup.sh
 chmod +x virtualboxsetup.sh
 #!/bin/bash
 

@@ -88,7 +88,7 @@ done
 install_packages python-dmidecode re acpidump unzip mesa-utils
 ##Antivm install
 print_status "${YELLOW}Installing antivmdetect and tools${NC}"
-mv DSDT* /home/$name/tools/DSDT-Intel-BOXDP55KG.bin
+cp DSDT* /home/$name/tools/DSDT-Intel-BOXDP55KG.bin
 cd /home/$name/tools
 git clone https://github.com/nsmfoo/antivmdetection.git  &>> $logfile
 mv antivmdetection antivmdetection_32-bit
@@ -101,6 +101,7 @@ unzip VolumeId  &>> $logfile
 #32-bit
 cd /home/$name/tools/antivmdetection_32-bit
 mv $gitdir/config_32-bitVM.sh $PWD
+cp $gitdir/example /home/$name/tools/antivmdetection_32-bit/
 cp /home/$name/tools/DSDT-Intel-BOXDP55KG.bin $PWD
 mv /home/$name/tools/Volumeid.exe /home/$name/tools/antivmdetection_32-bit/
 mv /home/$name/tools/devmanview_32* /home/$name/tools/antivmdetection_32-bit/DevManView.exe
@@ -109,6 +110,7 @@ touch user.lst
 #64-bit
 cd /home/$name/tools/antivmdetection_64-bit
 mv $gitdir/config_64-bitVM.sh $PWD
+cp $gitdir/example /home/$name/tools/antivmdetection_64-bit/
 mv /home/$name/tools/DSDT-Intel-BOXDP55KG.bin $PWD
 mv /home/$name/tools/Volumeid64.exe /home/$name/tools/antivmdetection_64-bit/Volumeid.exe
 mv /home/$name/tools/devmanview_64* /home/$name/tools/antivmdetection_64-bit/DevManView.exe

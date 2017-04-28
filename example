@@ -23,7 +23,7 @@ VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiO
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiOEMVBoxVer	'ABS 70/71 79 7A 7B 7C'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiProcManufacturer	'AMD processor'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiProcVersion	'AMD Turion(tm) X2 Dual-Core Mobile RM-74'
-VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiSystemFamily	''103C_5335KV'
+VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiSystemFamily	'103C_5335KV'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiSystemProduct	'HP EliteBook Folio'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiSystemSKU	'HP Pavilion dv4 Notebook PC'
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/pcbios/0/Config/DmiSystemSerial	'5EFF05DA4E474DBBA373BB4E6F96BE9D'

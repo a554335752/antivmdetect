@@ -105,7 +105,7 @@ mv $gitdir/config_32-bitVM.sh $PWD
 cp $gitdir/example.sh $PWD
 cp $gitdir/example.ps1 $PWD
 cp $gitdir/config_example.sh  $PWD
-cp &gitdir/DSDT-Intel-BOXDP55KG.bin $PWD
+cp /home/$name/tools/DSDT-Intel-BOXDP55KG.bin $PWD
 mv /home/$name/tools/Volumeid.exe /home/$name/tools/antivmdetection_32-bit/
 cp /home/$name/tools/devmanview.zip $PWD
 unzip *.zip &>> $logfile
@@ -118,7 +118,7 @@ mv $gitdir/config_64-bitVM.sh $PWD
 cp $gitdir/config_example.sh  $PWD
 cp $gitdir/example.ps1 $PWD
 cp $gitdir/example.sh $PWD
-cp $gitdir/DSDT-Intel-BOXDP55KG.bin $PWD
+cp /home/$name/tools/DSDT-Intel-BOXDP55KG.bin $PWD
 mv /home/$name/tools/Volumeid64.exe /home/$name/tools/antivmdetection_64-bit/Volumeid.exe
 cp /home/$name/tools/devmanview-x64.zip $PWD
 unzip *.zip &>> $logfile

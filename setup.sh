@@ -88,7 +88,7 @@ done
 install_packages python-dmidecode re acpidump unzip mesa-utils
 ##Antivm install
 print_status "${YELLOW}Installing antivmdetect and tools${NC}"
-mv DSDT-Intel-BOXDP55KG.aml /home/$name/tools/DSDT-Intel-BOXDP55KG.bin
+mv DSDT* /home/$name/tools/DSDT-Intel-BOXDP55KG.bin
 cd /home/$name/tools
 git clone https://github.com/nsmfoo/antivmdetection.git  &>> $logfile
 mv antivmdetection antivmdetection_32-bit

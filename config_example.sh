@@ -21,6 +21,6 @@ octetc=`echo "obase=16;$numberb" | bc`
 macadd="${octets}-${octeta}-${octetb}-${octetc}"
 
 cd $name/
-sed -i 's/"$1"/'"$name"'/g' virtualboxsetup.sh
+sed -i 's/win7sp1_64-bit/'"$name"'/g' virtualboxsetup.sh
 sed -i 's/0015C5000001/'"$macadd"'/g' virtualboxsetup.sh
 

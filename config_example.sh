@@ -5,7 +5,7 @@ mkdir $name/
 cp DevManView.exe $name/
 cp Volumeid.exe $name/
 cp DSDT* $name/
-cp example.ps1 $name/guestsetup.ps1
+cp example*.ps1 $name/guestsetup.ps1
 cp example.sh $name/virtualboxsetup.sh
 touch $name/computer.lst
 touch $name/user.lst

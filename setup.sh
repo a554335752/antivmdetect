@@ -103,7 +103,7 @@ unzip VolumeId  &>> $logfile
 cd /home/$name/tools/antivmdetection_32-bit
 mv $gitdir/config_32-bitVM.sh $PWD
 cp $gitdir/example.sh $PWD
-cp $gitdir/example.ps1 $PWD
+cp $gitdir/example_32-bit.ps1 $PWD
 cp $gitdir/config_example.sh  $PWD
 cp /home/$name/tools/DSDT-Intel-BOXDP55KG.bin $PWD
 mv /home/$name/tools/Volumeid.exe /home/$name/tools/antivmdetection_32-bit/
@@ -116,7 +116,7 @@ touch user.lst
 cd /home/$name/tools/antivmdetection_64-bit
 mv $gitdir/config_64-bitVM.sh $PWD
 cp $gitdir/config_example.sh  $PWD
-cp $gitdir/example.ps1 $PWD
+cp $gitdir/example_64-bit.ps1 $PWD
 cp $gitdir/example.sh $PWD
 cp /home/$name/tools/DSDT-Intel-BOXDP55KG.bin $PWD
 mv /home/$name/tools/Volumeid64.exe /home/$name/tools/antivmdetection_64-bit/Volumeid.exe

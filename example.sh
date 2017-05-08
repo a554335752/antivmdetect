@@ -59,6 +59,7 @@ VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/acpi/0/Config/AcpiCr
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/Devices/acpi/0/Config/AcpiCreatorRev	'03000001'
 VBoxManage modifyvm win7sp1_64-bit --macaddress1	0015C5000001
 
+#VBoxManage modifyvm win7sp1_64-bit --cpuidset 00000001 000306a9 04100800 7fbae3ff bfebfbff
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/CPUM/HostCPUID/80000002/eax  0x20444d41	
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/CPUM/HostCPUID/80000002/ebx  0x69727554	
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/CPUM/HostCPUID/80000002/ecx  0x74286e6f	

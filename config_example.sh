@@ -1,6 +1,15 @@
 #!/bin/bash
-echo -e "${YELLOW}What VM would you like to create antivm scripts for?${NC}"
+VMLIST="$(VBoxManage list vms|cut -d' ' -f1)"
+echo "Installed VMs:"
+
+count=0
+for i in $VMLIST; do
+    count=`expr $count + 1`
+    echo [$count] $i
+done
+echo -n "Which one do you want to create hardware profiles for? (1-$count): "
 read name
+
 mkdir $name/
 cp DevManView.exe $name/
 cp Volumeid.exe $name/

@@ -72,6 +72,7 @@ VBoxManage setextradata win7sp1_64-bit VBoxInternal/CPUM/HostCPUID/80000004/eax 
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/CPUM/HostCPUID/80000004/ebx  0x34372d4d	
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/CPUM/HostCPUID/80000004/ecx  0x20202020	
 VBoxManage setextradata win7sp1_64-bit VBoxInternal/CPUM/HostCPUID/80000004/edx  0x00202020
+VBoxManage modifyvm win7sp1_64-bit --paravirtprovider legacy  
 
 cpu_count=$(VBoxManage showvminfo --machinereadable win7sp1_64-bit | grep cpus=[0-9]* | sed "s/cpus=//")	
 if [ $cpu_count -lt "2" ]; then echo "[WARNING] CPU count is less than 2. Consider adding more!"; fi	

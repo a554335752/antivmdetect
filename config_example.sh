@@ -7,8 +7,10 @@ for i in $VMLIST; do
     count=`expr $count + 1`
     echo [$count] $i
 done
-echo -n "Which one do you want to create hardware profiles for? (1-$count): "
+echo -n "Which one do you want to create hardware profiles for?"
 read name
+echo -n "What are some user names to add to this machine?"
+read user
 
 mkdir $name/
 cp DevManView.exe $name/
@@ -17,7 +19,9 @@ cp DSDT* $name/
 cp example*.ps1 $name/guestsetup.ps1
 cp example.sh $name/virtualboxsetup.sh
 touch $name/computer.lst
+echo $name > $name/computer.lst
 touch $name/user.lst
+echo $user > $name/user.lst
 chmod +x $name/virtualboxsetup.sh
 #!/bin/bash
 
